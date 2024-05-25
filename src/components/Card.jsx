@@ -2,11 +2,10 @@ import React from 'react'
 import pinLocationLogo from '../assets/pin-location.svg'
 
 export default function Card(props) {
-    console.log(props);
     return (
         <>
             <article className='flex items-center justify-start gap-5 mb-10'>
-                <img src={props.item.imageUrl} alt="" className='w-32 h-44 rounded-md object-cover' />
+                <img src={props.item.imageUrl} alt="" className='w-32 h-44 rounded-md object-cover' loading='lazy' />
                 <div>
                     <div className='flex items-center justify-start mb-1'>
                         <img src={pinLocationLogo} alt="" className='w-2 h-3 mr-1' />
